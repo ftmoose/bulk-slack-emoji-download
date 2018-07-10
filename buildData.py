@@ -28,7 +28,7 @@ with requests.Session() as session:
 	dataOut = {"count": 0, "fails": 0, "emojis": {}, "failed-urls": [], "workspace": config["slack-workspace"]}
 	for i in range(1, maxPage+1):
 		print(">", int(math.floor(i/(maxPage+1) * 100)), "%")
-		data = session.get('https://ibm-cognitive-engage.slack.com/customize/emoji?page='+str(i), allow_redirects=True).text
+		data = session.get('https://'+config["slack-workspace"]+'.slack.com/customize/emoji?page='+str(i), allow_redirects=True).text
 		soup = BeautifulSoup(data, "html.parser")
 
 		for elem in soup.find_all("span", {"data-original": re.compile(r".*")}):
