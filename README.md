@@ -1,7 +1,7 @@
 # Download all slack emojis from your workspace
 
 I made this project because I'm always joining slack workspaces with loads of emojis, but could never figure out
-where they get all of their emojis!  I wanted them for my own workspaces so hopefully this will help you as
+where they get them all!  I wanted them for my own workspaces so hopefully this will help you as
 much as it's helped me.
 
 ## Getting Started
