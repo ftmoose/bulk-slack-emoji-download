@@ -22,6 +22,7 @@ pip3 install requests bs4 simplejson
 
 ## Cookie Thieving
 First thing we need to do is manually log into our slack workspace, modify and visit the following link.
+
 ```
 https://<Your Workspace>.slack.com/customize/emoji
 ```
@@ -31,8 +32,10 @@ navigate to the network tab.
 
 Log in.
 
+**NOTE: This will not work it you are already logged in, we're looking for the actual authentication here**
+
 After reaching the **Customize Your Workspace** page you should see multiple rest calls under the network tab,
-the one we're interested in hase a name similar to 
+the one we're interested in has a name similar to 
 ```
 checkcookie?redir=...
 ```
